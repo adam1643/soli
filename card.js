@@ -24,51 +24,48 @@ class Card {
 
         if(!this.visible) {
 
-            fill(255,0,0);
-            //rect(this.x,this.y,60,80);
-
         } else if(this.backed == 1) {
             image(backImage, this.x+1,this.y+1,this.width-2,this.height - 2);
         }
         else {
 
-            let color_text = "";
-            //console.log(this.col);
-            if(this.col == 0) {
-                color_text = "Pi";
-            }
-            else if(this.col == 1) {
-                color_text = "Te";
-            }
-            else if(this.col == 2) {
-                color_text = "Ka";
-            }
-            else if(this.col == 3) {
-                color_text = "Ki";
-            }
+            // let color_text = "";
+            // //console.log(this.col);
+            // if(this.col == 0) {
+            //     color_text = "Pi";
+            // }
+            // else if(this.col == 1) {
+            //     color_text = "Te";
+            // }
+            // else if(this.col == 2) {
+            //     color_text = "Ka";
+            // }
+            // else if(this.col == 3) {
+            //     color_text = "Ki";
+            // }
 
-            let number_text = this.num;
-
-            if(this.num == 1) number_text = "A";
-            else if(this.num == 11) number_text = "J";
-            else if(this.num == 12) number_text = "D";
-            else if(this.num == 13) number_text = "K";
+            // let number_text = this.num;
+            //
+            // if(this.num == 1) number_text = "A";
+            // else if(this.num == 11) number_text = "J";
+            // else if(this.num == 12) number_text = "D";
+            // else if(this.num == 13) number_text = "K";
 
             stroke(2);
 
             if(this.redded == 1) {
                 fill(255,0,0);
             }
-            else if(this.highlighted == 0) {
-                fill(255);
+            else if(this.highlighted == 1) {
+                fill(0,255,255);
             }
             else  {
-                fill(0,255,255);
+                fill(255);
             }
             rect(this.x,this.y,this.width,this.height);
             fill(255,0,255);
-            textSize(17);
-            let s = number_text + " " + color_text;
+          //  textSize(17);
+          //  let s = number_text + " " + color_text;
             //text(s,this.x+10, this.y+30);
             image(this.img,this.x+1,this.y+1,this.width-2,this.height-2);
             //console.log(this.num);

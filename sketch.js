@@ -11,16 +11,14 @@ function setup() {
     rect(0,0,800,600)
     strokeWeight(1);
     t = new Talia();
-    //t.cards[0].visible = 0;
     t.rozmiesc();
-    //    t.draw();
+
 
 }
 
 function mousePressed() {
 
     t.isClicked();
-
 
 }
 
