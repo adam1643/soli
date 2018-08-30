@@ -1,4 +1,4 @@
-class Talia {
+ class Talia {
 
     constructor() {
         this.cards = new Array();
